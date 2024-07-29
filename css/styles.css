@@ -95,6 +95,7 @@ line-height: 150%;
 letter-spacing: 0.02em; 
 color: #2E2F42;
 padding: 24px 0;
+transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .header-name-studio {
@@ -123,7 +124,6 @@ padding: 24px 0;
     align-items: end;
     position: relative;
     color: #404bbf;
-    transition: color 200ms cubic-bezier(0.4,0,0.2,1);
 }
 
 
@@ -203,6 +203,7 @@ padding: 16px 32px;
 min-width: 169px;
 height: 56px;
 border: none;
+transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-click:hover, 
@@ -286,8 +287,6 @@ border: 1px solid #8e8f99;
 .team-list {
 display: flex;
 gap: 24px;
-
-
 }
 
 .team-list-item {
@@ -303,7 +302,7 @@ gap: 24px;
 
 .team-name-container {
  
-padding: 32px 16px;
+padding: 32px 0;
 
 }
 
@@ -326,16 +325,13 @@ padding: 32px 16px;
         margin-bottom: 8px;
 }
 
-.team-list {
-   
-}
-
 .team-list-icon {
 width: 232px;
     height: 40px;
     display: flex;
         gap: 24px;
     align-items: baseline;
+    justify-content: center;
 
 }
 
@@ -343,6 +339,7 @@ width: 232px;
 width: 40px;
 height: 40px;
 margin: 0 auto;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link {
@@ -356,7 +353,8 @@ margin: 0 auto;
     transition: background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-link:hover {
+.icon-link:hover,
+.icon-link:focus {
     background-color: #404BBF
 }
 
@@ -391,6 +389,9 @@ margin: 0 auto;
     flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
+.portfolio-list-item{
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 
 .portfolio-animation{
     position: relative;
@@ -412,13 +413,14 @@ font-family: "Roboto", sans-serif;
     height: 100%;
     transform: translateY(100%);
     opacity: 0;
-    transition: transform 300ms linear, opacity 300ms linear;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .portfolio-list-item:hover .portfolio-text-animation {
     transform: translateY(0%); 
     opacity: 1;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
    
 }
 
@@ -521,6 +523,7 @@ font-family: "Roboto", sans-serif;
 .footer-icon-item {
 width: 40px;
 height: 40px;
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link {
@@ -533,7 +536,8 @@ height: 40px;
     background-color: #4D5AE5;
 }
 
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
     background-color: #31D0AA;
 }
 
