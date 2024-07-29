@@ -207,7 +207,6 @@ min-width: 169px;
 height: 56px;
 border: none;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transition: color 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-click:hover, 
